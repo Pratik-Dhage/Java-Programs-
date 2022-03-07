@@ -1,0 +1,35 @@
+import java.util.*;
+class Raju
+{ public static void main(String args[])
+{   String n,l;
+
+    int i,c;
+
+Scanner a=new Scanner(System.in);
+System.out.println("Name:");
+n=a.next();
+System.out.println("Name is:"+n);
+
+
+
+Scanner b=new Scanner(System.in);
+System.out.println("Location:");
+l=b.next();
+System.out.println("location is:"+l);
+
+
+Scanner d=new Scanner(System.in);
+System.out.println("ID:");
+i=d.nextInt();
+System.out.println("ID is:"+i);
+
+
+Scanner o=new Scanner(System.in);
+System.out.println("Contact:");
+c=o.nextInt();
+System.out.println("Contact is:"+c);
+
+
+
+
+}}

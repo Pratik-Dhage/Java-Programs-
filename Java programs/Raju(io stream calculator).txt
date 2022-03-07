@@ -1,0 +1,20 @@
+import java.io.*;
+class Raju
+{ public static void main (String[] args)throws IOException
+
+{
+String a=args[0],b=args[1];
+InputStreamReader isr=new InputStreamReader(System.in);
+BufferedReader br=new BufferedReader(isr);
+int A=Integer.parseInt(a),B=Integer.parseInt(b),C=A+B,D=A-B,E=A*B,F=A/B;
+
+
+
+
+
+{System.out.println("ADDITION="+C);}
+{System.out.println("SUBTRACTION="+D);}
+{System.out.println("MULTIPLICATION="+E);}
+{System.out.println("DIVISION="+F);}
+
+}}

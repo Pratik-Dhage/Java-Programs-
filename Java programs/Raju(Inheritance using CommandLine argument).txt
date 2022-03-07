@@ -1,0 +1,108 @@
+class A
+{
+private int id;
+private String name;
+private String location;
+private int contact;
+
+public int getId()
+{return id;}
+public void setId(int id)
+{this.id=id;}
+
+public String getName()
+{return name;}
+public void setName(String name)
+{this.name=name;}
+
+public String getLocation()
+{return location;}
+public void setLocation(String location)
+{this.location=location;}
+
+public int getContact()
+{return contact;}
+public void setContact(int contact)
+{this.contact=contact;}
+
+}
+
+class B extends A
+{ 
+private String branch;
+private String university;
+
+public String getBranch()
+{return branch;}
+public void setBranch(String branch)
+{this.branch=branch;}
+
+public String getUniversity()
+{return university;}
+public void setUniversity(String university)
+{this.university=university;}
+
+}
+
+class C extends A
+{
+private int sem;
+private int years;
+private String language;
+
+public int getSem()
+{return sem;}
+public void setSem(int sem)
+{this.sem=sem;}
+
+public int getYears()
+{return years;}
+public void setYears(int years)
+{this.years=years;}
+
+public String getLanguage()
+{return language;}
+public void setLanguage(String language)
+{this.language=language;}
+
+}
+
+class Raju
+{
+public static void main(String args[])
+{
+A a =new A();
+B b =new B();
+C c =new C();
+
+a.setId(Integer.parseInt(args[0]));
+a.setName(args[1]);
+a.setLocation(args[2]);
+a.setContact(Long.parselong(args[3]));
+b.setBranch(args[4]);
+b.setUniversity(args[5]);
+c.setSem(Integer.parseInt(args[6]));
+c.setYears(Integer.parseInt(args[7]));
+c.setLanguage(args[8]);
+
+System.out.println("ID:"+a.getId());
+System.out.println("NAME:"+a.getName());
+System.out.println("LOCATION:"+a.getLocation());
+System.out.println("CONTACT:"+a.getContact());
+System.out.println("BRANCH:"+b.getBranch());
+System.out.println("UNIVERSITY:"+b.getUniversity());
+System.out.println("TOTAL SEMESTERS:"+c.getSem());
+System.out.println("NO. OF YEARS:"+c.getYears());
+System.out.println("PROG. LANGUAGE:"+c.getLanguage());
+
+
+}}
+
+
+
+
+
+
+
+
+
